@@ -8,7 +8,6 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
   color: white;
-  background-color: #141922;
   height: 100vh;
 }
 img {
@@ -29,15 +28,20 @@ ul {
 main {
   display: flex;
   height: 80vh;
+  margin-top: 4em;
 }
 /* HEADER */
 header {
-  background-color: rgba(0, 0, 6, 0.8);
+  background-color: rgba(0, 0, 6, 0.9);
   height: 10vh;
+  width: 100%;
   padding: 1em 0em;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 header .logo {
   padding: 1em;
@@ -62,7 +66,7 @@ header .upgrade a {
 
 /* SIDEBAR */
 .sidebar {
-  background-color: red;
+  background-color: black;
   height: 80vh;
   width: 20%;
   padding: 1em;
@@ -104,13 +108,13 @@ header .upgrade a {
   width: 1em;
   margin-right: 0.3em;
   vertical-align: middle;
-  fill: #a3a3a3;
 }
 #account {
   padding: 0.7em;
-  background-color: white;
+  /* background-color: #a3a3a3; */
   border-radius: 50%;
 }
+
 .lower-menu li:last-child {
   font-weight: bold;
   color: white;
@@ -122,20 +126,133 @@ header .upgrade a {
 
 /* MAIN CONTENT*/
 #main-content {
-  background-color: green;
+  background-color: #141922;
   overflow-y: auto;
   width: 80%;
   padding: 1em;
 }
+.secondary-menu {
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+.secondary-menu li > a {
+  font-size: 0.5rem;
+  line-height: 0.5rem;
+}
+
+#main-content h2 {
+  margin-bottom: 1em;
+}
+
+.songs-container {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.song {
+  width: calc(100% / 6);
+}
+
+.descrizione {
+  margin-bottom: 1em;
+}
+
+.artist-container {
+  display: flex;
+  gap: 1em;
+  margin-bottom: 1.5em;
+}
+.artist-container .song img {
+  border-radius: 50%;
+}
+.song h3,
+.artist {
+  text-align: center;
+}
 
 /* PLAYER */
 footer {
-  background-color: chocolate;
   height: 10vh;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  background-color: #282828;
+  display: flex;
+  justify-content: space-between;
 }
 
+.player-left {
+  display: flex;
+  align-items: center;
+}
+.player-song-img {
+  width: 3.5em;
+  padding: 0.5em;
+}
+.player-song-artist-name {
+  font-weight: bold;
+  font-size: 0.6rem;
+}
+.player-song-track-name {
+  font-size: 0.7rem;
+  font-weight: 100;
+  color: #a3a3a3;
+}
+.player-song-add-controls {
+  margin: 0 2em;
+}
+.player-song-add-controls > * {
+  color: #a3a3a3;
+  margin-right: 0.2rem;
+}
+.player-centre {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.player-control-icons {
+  padding: 0.5em;
+}
+.player-control-icons > * {
+  margin-right: 0.5em;
+}
+.player-control-bar {
+  display: flex;
+  align-items: center;
+}
+.player-control-bar span {
+  font-size: 0.6rem;
+}
+.player-control-bar hr {
+  width: 170px;
+  margin: 0 0.5em;
+}
+
+.player-right {
+  display: flex;
+  align-items: center;
+}
+.player-right > * {
+  margin-right: 1em;
+}
+.player-right hr {
+  width: 70px;
+
+  border-color: #a3a3a3;
+}
 /* TABLET */
 @media screen and (max-width: 700px) {
+  /* MAIN CONTENT */
+  .songs-container {
+    flex-wrap: wrap;
+  }
+  .song {
+    width: calc(100% / 4 - 1em);
+  }
 }
 
 /* MOBILE */
@@ -170,8 +287,12 @@ footer {
     display: none;
   }
 
-  /* MAIN */
+  /* MAIN CONTENT */
   #main-content {
     width: 90%;
+  }
+
+  .song {
+    width: calc(100% / 2 - 1em);
   }
 }
