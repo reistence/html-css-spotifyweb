@@ -9,6 +9,7 @@ html {
   font-size: 100%;
   color: white;
   height: 100vh;
+  background-color: black;
 }
 img {
   width: 100%;
@@ -130,7 +131,8 @@ header .upgrade a {
   overflow-y: auto;
   width: 80%;
   padding: 1em;
-  padding-top: 10vh;
+  padding-top: 11vh;
+  margin-top: -10vh;
 }
 .secondary-menu {
   margin: 0 auto;
