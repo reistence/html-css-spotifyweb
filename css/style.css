@@ -28,11 +28,11 @@ ul {
 main {
   display: flex;
   height: 80vh;
-  margin-top: 4em;
+  margin-top: 10vh;
 }
 /* HEADER */
 header {
-  background-color: rgba(0, 0, 6, 0.9);
+  background-color: rgba(0, 0, 6, 0.8);
   height: 10vh;
   width: 100%;
   padding: 1em 0em;
@@ -130,6 +130,7 @@ header .upgrade a {
   overflow-y: auto;
   width: 80%;
   padding: 1em;
+  padding-top: 10vh;
 }
 .secondary-menu {
   margin: 0 auto;
