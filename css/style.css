@@ -148,6 +148,7 @@ header .upgrade a {
 
 #main-content h2 {
   margin-bottom: 1em;
+  font-size: 1rem;
 }
 
 .songs-container {
@@ -156,7 +157,7 @@ header .upgrade a {
   margin-bottom: 1.5em;
 }
 .song {
-  width: calc(100% / 6);
+  width: calc(100% / 6 - 1em);
 }
 
 .descrizione {
@@ -174,6 +175,7 @@ header .upgrade a {
 .song h3,
 .artist {
   text-align: center;
+  font-size: 0.7rem;
 }
 
 /* PLAYER */
