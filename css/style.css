@@ -54,8 +54,10 @@ header .upgrade {
   border: 1px solid white;
   padding: 0.5em 1em;
   border-radius: 30px;
-  font: 0.7rem;
   margin-right: 1em;
+}
+header .upgrade a {
+  font-size: 0.7rem;
 }
 
 /* SIDEBAR */
@@ -64,19 +66,59 @@ header .upgrade {
   height: 80vh;
   width: 20%;
   padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.menu > * {
+.upper-menu > * {
   margin-bottom: 1em;
+  color: #a3a3a3;
+  font-size: 0.8rem;
 }
 
-.menu img {
+.upper-menu svg {
   width: 1.5em;
   margin-right: 0.3em;
   vertical-align: middle;
+  fill: #a3a3a3;
 }
+
 .playlist > * {
   margin-bottom: 1em;
+  font-size: 0.8rem;
+  color: #a3a3a3;
 }
+
+#add-i {
+  background-color: #a3a3a3;
+  padding: 0.5em;
+  color: black;
+}
+
+.lower-menu > * {
+  margin-bottom: 1em;
+  color: #a3a3a3;
+  font-size: 0.8rem;
+}
+.lower-menu svg {
+  width: 1em;
+  margin-right: 0.3em;
+  vertical-align: middle;
+  fill: #a3a3a3;
+}
+#account {
+  padding: 0.7em;
+  background-color: white;
+  border-radius: 50%;
+}
+.lower-menu li:last-child {
+  font-weight: bold;
+  color: white;
+}
+
+/* .menu svg {
+  fill: #a3a3a3;
+} */
 
 /* MAIN CONTENT*/
 #main-content {
@@ -109,17 +151,25 @@ footer {
   /* SIDEBAR */
   .sidebar {
     width: 10%;
+    align-items: center;
   }
   .sidebar span {
     display: none;
   }
 
-  .menu img {
+  .menu svg {
     width: 1.5em;
   }
   .playlist {
     display: none;
   }
+  .lower-menu span {
+    display: none;
+  }
+  .lower-menu hr {
+    display: none;
+  }
+
   /* MAIN */
   #main-content {
     width: 90%;
