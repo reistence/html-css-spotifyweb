@@ -50,6 +50,9 @@ header .upgrade {
 header .upgrade a {
   font-size: 0.7rem;
 }
+header .upgrade:hover {
+  font-size: large;
+}
 
 /* SIDEBAR */
 .sidebar {
@@ -81,6 +84,11 @@ header .upgrade a {
   font-size: 0.8rem;
 }
 
+.upper-menu > *:hover {
+  color: white;
+  font-weight: 500;
+}
+
 .upper-menu svg {
   width: 1.5em;
   margin-right: 0.3em;
@@ -89,9 +97,13 @@ header .upgrade a {
 }
 
 .playlist > * {
-  margin-bottom: 1em;
+  margin-bottom: 0.8em;
   font-size: 0.8rem;
   color: #a3a3a3;
+}
+.playlist > *:hover {
+  color: white;
+  font-weight: 600;
 }
 
 #add-i {
@@ -99,11 +111,18 @@ header .upgrade a {
   padding: 0.5em;
   color: black;
 }
+#add-i:hover {
+  background-color: white;
+}
 
 .lower-menu > * {
   margin-bottom: 1em;
   color: #a3a3a3;
   font-size: 0.8rem;
+}
+.lower-menu li:first-child:hover {
+  color: white;
+  font-weight: 600;
 }
 .lower-menu svg {
   width: 1.2em;
@@ -147,14 +166,32 @@ main {
 }
 .secondary-menu {
   margin: 0 auto;
-  width: 50%;
+  width: 75%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
   margin-bottom: 1em;
 }
 .secondary-menu li > a {
-  font-size: 0.5rem;
-  line-height: 0.5rem;
+  font-size: 0.7rem;
+  color: #a3a3a3;
+  font-weight: bold;
+}
+.secondary-menu li:first-child {
+  position: relative;
+}
+.secondary-menu li:first-child::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  width: 50%;
+  left: 25%;
+  border-top: 2px solid green;
+}
+
+.secondary-menu a:hover {
+  color: white;
 }
 
 #main-content h2 {
@@ -198,12 +235,13 @@ footer {
   left: 0;
   background-color: #282828;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .player-left {
   display: flex;
   align-items: center;
+  width: 30%;
 }
 .player-song-img {
   width: 3.5em;
@@ -219,13 +257,14 @@ footer {
   color: #a3a3a3;
 }
 .player-song-add-controls {
-  margin: 0 2em;
+  margin-left: 1em;
 }
 .player-song-add-controls > * {
   color: #a3a3a3;
   margin-right: 0.2rem;
 }
 .player-centre {
+  width: 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -249,8 +288,10 @@ footer {
 }
 
 .player-right {
+  width: 30%;
   display: flex;
   align-items: center;
+  justify-content: flex-end;
 }
 .player-right > * {
   margin-right: 1em;
@@ -325,4 +366,6 @@ footer {
   .song {
     width: calc(100% / 2 - 1em);
   }
+
+  /* PLAYER */
 }
