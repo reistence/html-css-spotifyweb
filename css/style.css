@@ -88,6 +88,25 @@ header .upgrade:hover a {
   font-size: 0.8rem;
 }
 
+.upper-menu li {
+  position: relative;
+}
+.upper-menu li::before {
+  /* display: none; */
+}
+
+.upper-menu li:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  width: 21px;
+  bottom: 0%;
+  transform: rotate(-90deg);
+  border-top: 2px solid #adff2f;
+}
+
 .upper-menu > *:hover {
   color: white;
   font-weight: 500;
@@ -199,7 +218,7 @@ main {
   bottom: -2px;
   width: 50%;
   left: 25%;
-  border-top: 2px solid green;
+  border-top: 2px solid #adff2f;
 }
 
 .secondary-menu a:hover {
