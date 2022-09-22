@@ -65,6 +65,7 @@ header .upgrade:hover a {
   flex-direction: column;
   justify-content: space-between;
   overflow-y: auto;
+  overflow-x: hidden;
 }
 
 .logo {
@@ -139,7 +140,9 @@ header .upgrade:hover a {
   vertical-align: middle;
 }
 #account {
-  padding: 0.7em;
+  width: 20px;
+  height: 20px;
+  object-fit: cover;
   /* background-color: #a3a3a3; */
   border-radius: 50%;
 }
@@ -279,13 +282,18 @@ footer {
 }
 .player-control-icons {
   padding: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  width: 70%;
 }
-.player-control-icons > * {
-  padding-right: 0.5em;
-}
+/* .player-control-icons > * {
+  padding: 0 1em;
+} */
 #play {
   font-size: 1.5rem;
-  padding-right: 0.2em;
+  margin: 0 0.5em;
 }
 .player-control-bar {
   display: flex;
@@ -330,6 +338,10 @@ footer {
   .player-song-add-controls {
     margin-left: 0.4em;
   }
+
+  .player-control-icons {
+    gap: 0.5em;
+  }
 }
 
 /* MOBILE */
@@ -342,6 +354,7 @@ footer {
   .sidebar {
     width: 10%;
     align-items: center;
+    padding: 1em 1em 0 1em;
   }
   .sidebar span {
     display: none;
@@ -385,8 +398,13 @@ footer {
   }
 
   /* PLAYER */
-
+  .player-song-info {
+    width: min-content;
+  }
   .player-song-add-controls {
     margin-left: 0.4em;
+  }
+  #play {
+    margin: 0 0.5em;
   }
 }
