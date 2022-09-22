@@ -281,7 +281,11 @@ footer {
   padding: 0.5em;
 }
 .player-control-icons > * {
-  margin-right: 0.5em;
+  padding-right: 0.5em;
+}
+#play {
+  font-size: 1.5rem;
+  padding-right: 0.2em;
 }
 .player-control-bar {
   display: flex;
@@ -320,6 +324,11 @@ footer {
   }
   .song {
     width: calc(100% / 4 - 1em);
+  }
+  /* PLAYER */
+
+  .player-song-add-controls {
+    margin-left: 0.4em;
   }
 }
 
@@ -376,4 +385,8 @@ footer {
   }
 
   /* PLAYER */
+
+  .player-song-add-controls {
+    margin-left: 0.4em;
+  }
 }
