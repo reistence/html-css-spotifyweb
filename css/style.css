@@ -58,12 +58,13 @@ header .upgrade:hover a {
 /* SIDEBAR */
 .sidebar {
   background-color: black;
-  height: 90vh;
+  height: calc(100vh - 5em);
   width: 200px;
   padding: 1em;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow-y: auto;
 }
 
 .logo {
@@ -97,6 +98,10 @@ header .upgrade:hover a {
   fill: #a3a3a3;
 }
 
+.playlist {
+  overflow-y: auto;
+  height: 35vh;
+}
 .playlist > * {
   margin-bottom: 0.8em;
   font-size: 0.8rem;
@@ -117,6 +122,9 @@ header .upgrade:hover a {
   background-color: white;
 }
 
+.lower-menu {
+  padding-top: 1em;
+}
 .lower-menu > * {
   margin-bottom: 1em;
   color: #a3a3a3;
@@ -153,14 +161,13 @@ header .upgrade:hover a {
 main {
   display: flex;
   /* height: 90vh; */
-  /* margin-top: 10vh; */
 }
 
 #main-content {
   background-color: #141922;
   overflow-y: auto;
   width: 100%;
-  height: 90vh;
+  height: calc(100vh - 5em);
   padding: 1em;
   padding-top: 13vh;
   /* margin-top: -10vh; */
@@ -229,7 +236,7 @@ main {
 
 /* PLAYER */
 footer {
-  height: 10vh;
+  height: 5em;
   width: 100%;
   position: fixed;
   bottom: 0;
