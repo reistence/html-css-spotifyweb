@@ -124,7 +124,6 @@ header .upgrade:hover a {
 }
 .lower-menu li:first-child:hover {
   color: white;
-  font-weight: 600;
 }
 .lower-menu svg {
   width: 1.2em;
