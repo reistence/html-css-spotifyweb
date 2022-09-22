@@ -50,8 +50,9 @@ header .upgrade {
 header .upgrade a {
   font-size: 0.7rem;
 }
-header .upgrade:hover {
-  font-size: large;
+header .upgrade:hover a {
+  font-weight: bold;
+  font-size: 0.8rem;
 }
 
 /* SIDEBAR */
