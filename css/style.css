@@ -492,10 +492,6 @@ footer {
   .secondary-menu {
     width: 90%;
   }
-  #main-content {
-    /* width: 100%; */
-  }
-
   .song {
     width: calc(100% / 2 - 1em);
   }
