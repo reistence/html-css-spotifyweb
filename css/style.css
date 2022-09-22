@@ -112,7 +112,8 @@ header .upgrade:hover a {
   padding: 0.5em;
   color: black;
 }
-#add-i:hover {
+
+.playlist .add-playlist:hover #add-i {
   background-color: white;
 }
 
