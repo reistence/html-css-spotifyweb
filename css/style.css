@@ -218,6 +218,43 @@ main {
 .song {
   width: calc(100% / 6 - 1em);
 }
+.song-img {
+  position: relative;
+}
+
+.song-img:hover .overlay {
+  display: block;
+}
+.song-img:hover .overlay-artist {
+  display: block;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 6, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+.overlay-artist {
+  position: absolute;
+  background-color: rgba(0, 0, 6, 0.7);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  border-radius: 49%;
+  /* border: 1px solid rgba(0, 0, 6, 0.7); */
+}
+#overlay-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+}
 
 .descrizione {
   margin-bottom: 1em;
