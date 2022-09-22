@@ -325,6 +325,10 @@ footer {
   font-weight: 100;
   color: #a3a3a3;
 }
+.player-song-track-name:hover {
+  color: white;
+  text-decoration: underline;
+}
 .player-song-add-controls {
   margin-left: 1em;
 }
@@ -356,6 +360,10 @@ footer {
 #play {
   font-size: 1.5rem;
   margin: 0 0.5em;
+  display: inline-block;
+}
+#play:hover {
+  font-size: 1.55rem;
 }
 .player-control-bar {
   display: flex;
@@ -395,6 +403,8 @@ footer {
 }
 .song-status:hover {
   height: 6px;
+  background-color: #adff2f;
+  border-color: #adff2f;
 }
 
 .player-right {
@@ -442,6 +452,8 @@ footer {
 
 .volume-slider:hover {
   height: 6px;
+  background-color: #adff2f;
+  border-color: #adff2f;
 }
 /* TABLET */
 @media screen and (max-width: 700px) {
