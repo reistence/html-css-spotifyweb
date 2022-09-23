@@ -51,7 +51,7 @@ header .upgrade a {
 }
 header .upgrade:hover {
   font-weight: bold;
-  transform: scale(1.1);
+  transform: scale(1.07);
 }
 
 /* SIDEBAR */
