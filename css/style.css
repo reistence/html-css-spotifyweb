@@ -91,9 +91,8 @@ header .upgrade:hover a {
 .upper-menu li {
   position: relative;
 }
-.upper-menu li::before {
-  /* display: none; */
-}
+/* .upper-menu li::before {
+  /* display: none; } */
 
 .upper-menu li:hover::before {
   content: "";
@@ -208,7 +207,7 @@ main {
   color: #a3a3a3;
   font-weight: bold;
 }
-.secondary-menu li:first-child {
+.secondary-menu li {
   position: relative;
 }
 .secondary-menu li:first-child::before {
@@ -223,6 +222,15 @@ main {
 
 .secondary-menu a:hover {
   color: white;
+}
+.secondary-menu li:hover::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  width: 50%;
+  left: 25%;
+  border-top: 2px solid #adff2f;
 }
 
 #main-content h2 {
@@ -250,7 +258,7 @@ main {
 }
 .overlay {
   position: absolute;
-  background-color: rgba(0, 0, 6, 0.7);
+  background-color: rgba(0, 0, 6, 0.5);
   top: 0;
   left: 0;
   width: 100%;
@@ -259,7 +267,7 @@ main {
 }
 .overlay-artist {
   position: absolute;
-  background-color: rgba(0, 0, 6, 0.7);
+  background-color: rgba(0, 0, 6, 0.5);
   top: 0;
   left: 0;
   width: 100%;
