@@ -322,8 +322,19 @@
         <div class="player-control-bar">
           <span>0:35</span>
           <div class="prog-bar">
-            <hr class="song-duration" />
-            <hr class="song-status" />
+            <!-- HR VERSION -->
+            <!-- <hr class="song-duration" />
+            <hr class="song-status" /> -->
+            <!-- /HR VERSION -->
+            <!-- INPUT VERSION -->
+            <input
+              type="range"
+              min="1"
+              max="100"
+              class="song-slider"
+              id="VolumeRange"
+            />
+            <!-- INPUT VERSION -->
           </div>
           <span>4:35</span>
         </div>
@@ -335,8 +346,11 @@
           <i class="fa-solid fa-volume-high"></i>
         </div>
         <div class="volume-bar">
+          <!-- HR VERSION -->
           <!-- <hr class="volume" />
           <hr class="volume-slider" /> -->
+          <!-- /HR VERSION -->
+          <!-- INPUT VERSION -->
           <input
             type="range"
             min="1"
@@ -344,6 +358,7 @@
             class="volume-slider"
             id="VolumeRange"
           />
+          <!-- /INPUT VERSION -->
         </div>
       </div>
     </footer>
