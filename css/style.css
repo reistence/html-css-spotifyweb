@@ -188,10 +188,6 @@ header .upgrade:hover {
   color: white;
 }
 
-/* .menu svg {
-  fill: #a3a3a3;
-} */
-
 /* MAIN CONTENT*/
 .container {
   width: calc(100% - 200px);
@@ -291,7 +287,6 @@ main {
   height: 100%;
   display: none;
   border-radius: 49%;
-  /* border: 1px solid rgba(0, 0, 6, 0.7); */
 }
 #overlay-play {
   position: absolute;
@@ -301,8 +296,9 @@ main {
   font-size: 3rem;
 }
 
-.descrizione {
+.description {
   margin-bottom: 1em;
+  font-size: 0.8rem;
 }
 
 .artist-container {
