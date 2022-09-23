@@ -366,6 +366,7 @@ footer {
 }
 .player-song-add-controls > *:hover {
   color: white;
+  transform: scale(1.05);
 }
 
 .player-centre {
@@ -382,9 +383,9 @@ footer {
   gap: 0.5em;
   width: 70%;
 }
-/* .player-control-icons > * {
-  padding: 0 1em;
-} */
+.player-control-icons i:hover {
+  transform: scale(1.05);
+}
 #play {
   font-size: 1.5rem;
   margin: 0 0.5em;
@@ -446,6 +447,9 @@ footer {
 }
 .player-right-icons i {
   margin-right: 0.3em;
+}
+.player-right-icons i:hover {
+  transform: scale(1.05);
 }
 
 .volume-bar {
