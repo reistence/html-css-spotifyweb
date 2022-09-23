@@ -444,6 +444,9 @@ footer {
 .player-right > * {
   margin-right: 1em;
 }
+.player-right-icons i {
+  margin-right: 0.3em;
+}
 
 .volume-bar {
   position: relative;
@@ -454,7 +457,7 @@ footer {
   position: absolute;
   top: 0%;
   left: 0%;
-  width: 90%;
+  width: 100%;
   height: 5px;
   border-radius: 40px;
   background-color: #5a5a5a;
@@ -535,6 +538,18 @@ footer {
   .playlist {
     display: none;
   }
+  .lower-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lower-menu #download {
+    margin: 0 auto;
+  }
+  .lower-menu #account {
+    margin: 0 auto;
+  }
+
   .lower-menu span {
     display: none;
   }
@@ -564,5 +579,10 @@ footer {
   }
   #play {
     margin: 0 0.5em;
+  }
+  .player-right {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
   }
 }
