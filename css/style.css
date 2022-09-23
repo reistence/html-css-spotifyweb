@@ -76,8 +76,15 @@ header .upgrade:hover {
   width: 100%;
   height: 2.5em;
 }
+#logo-big:hover path {
+  fill: #adff2f;
+}
+
 #logo-small {
   display: none;
+}
+#logo-small:hover path {
+  fill: #adff2f;
 }
 
 .upper-menu > * {
@@ -321,6 +328,9 @@ footer {
 .player-song-img {
   width: 3.5em;
   padding: 0.5em;
+}
+.player-song-img:hover img {
+  transform: scale(1.1);
 }
 .player-song-artist-name {
   font-weight: bold;
