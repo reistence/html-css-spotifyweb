@@ -110,6 +110,15 @@ header .upgrade:hover {
   transform: rotate(-90deg);
   border-top: 2px solid #adff2f;
 }
+.upper-menu li:hover #home-svg path {
+  fill: white;
+}
+.upper-menu li:hover #search-svg path {
+  fill: white;
+}
+.upper-menu li:hover #library-svg path {
+  fill: white;
+}
 
 .upper-menu > *:hover {
   color: white;
@@ -157,6 +166,9 @@ header .upgrade:hover {
 }
 .lower-menu li:first-child:hover {
   color: white;
+}
+.lower-menu li:first-child:hover #download path {
+  fill: white;
 }
 .lower-menu svg {
   width: 1.2em;
