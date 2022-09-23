@@ -138,7 +138,7 @@ header .upgrade:hover {
 }
 .playlist > * {
   margin-bottom: 0.8em;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #a3a3a3;
 }
 .playlist > *:hover {
