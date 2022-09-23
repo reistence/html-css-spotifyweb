@@ -8,8 +8,6 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 100%;
   color: white;
-
-  /* background-color: black; */
 }
 body {
   width: 100%;
@@ -51,9 +49,9 @@ header .upgrade {
 header .upgrade a {
   font-size: 0.7rem;
 }
-header .upgrade:hover a {
+header .upgrade:hover {
   font-weight: bold;
-  font-size: 0.8rem;
+  transform: scale(1.1);
 }
 
 /* SIDEBAR */
@@ -371,7 +369,7 @@ footer {
   display: inline-block;
 }
 #play:hover {
-  font-size: 1.55rem;
+  transform: scale(1.5);
 }
 .player-control-bar {
   display: flex;
