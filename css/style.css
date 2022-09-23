@@ -393,7 +393,7 @@ footer {
 .player-control-bar {
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 90%;
 }
 .player-control-bar span {
   font-size: 0.6rem;
